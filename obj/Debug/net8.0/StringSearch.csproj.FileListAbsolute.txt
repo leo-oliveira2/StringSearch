@@ -1,0 +1,14 @@
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\bin\Debug\net8.0\StringSearch.exe
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\bin\Debug\net8.0\StringSearch.deps.json
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\bin\Debug\net8.0\StringSearch.runtimeconfig.json
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\bin\Debug\net8.0\StringSearch.dll
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\bin\Debug\net8.0\StringSearch.pdb
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.AssemblyInfoInputs.cache
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.AssemblyInfo.cs
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.csproj.CoreCompileInputs.cache
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.dll
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\refint\StringSearch.dll
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.pdb
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.genruntimeconfig.cache
+C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\ref\StringSearch.dll
