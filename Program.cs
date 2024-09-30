@@ -14,7 +14,7 @@ class Program
 
         string searchString = args[0];
 
-        string fixedPath = @"C:\KB\SescNet_Develop1\Data099\web\"; 
+        string fixedPath = @"Your\Path\"; 
 
         if (!Directory.Exists(fixedPath))
         {
