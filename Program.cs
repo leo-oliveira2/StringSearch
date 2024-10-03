@@ -1,47 +1,42 @@
-﻿using System;
+﻿namespace StringSearch;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        if (args.Length == 0)
-        {
-            Console.WriteLine("Por favor, forneça a string a ser pesquisada.");
-            return;
-        }
-
+        VerifyIfConsoleIsEmpty(args);
         string searchString = args[0];
-
         string fixedPath = @"C:\KB\SescNet_Develop1\Data099\web\"; 
+        VerifyIfDirectoryExists(fixedPath);
+        Console.WriteLine($"Procurando por '{searchString}' em todos os arquivos .cs na pasta '{fixedPath}'...\n");
+        SearchInDirectory(fixedPath, searchString);
+    }
 
+    public static void VerifyIfDirectoryExists(String fixedPath){
         if (!Directory.Exists(fixedPath))
         {
             Console.WriteLine($"A pasta '{fixedPath}' não existe.");
             return;
         }
-        
-        Console.WriteLine($"Procurando por '{searchString}' em todos os arquivos .cs na pasta '{fixedPath}'...\n");
-
-        SearchInDirectory(fixedPath, searchString);
     }
 
-    static void SearchInDirectory(string directory, string searchString)
-    {
-        HashSet<string> foundFiles = new HashSet<string>(); 
+    public static void VerifyIfConsoleIsEmpty(string[] args){
+        if (args.Length == 0)
+        {
+            Console.WriteLine("Por favor, forneça a string a ser pesquisada.");
+            return;
+        }
+    }
 
+    public static void SearchInDirectory(string directory, string searchString)
+    {
         try
         {
-            foreach (string file in Directory.GetFiles(directory, "*.cs"))
-            {
-                SearchInFile(file, searchString, foundFiles);
-            }
-
-            foreach (string subDirectory in Directory.GetDirectories(directory))
-            {
-                SearchInDirectory(subDirectory, searchString);
-            }
+            SearchInFilesOfDirectory(directory, searchString);
+            RecursionForSubDirectories(directory,searchString);
         }
         catch (Exception ex)
         {
@@ -49,27 +44,44 @@ class Program
         }
     }
 
-    static void SearchInFile(string filePath, string searchString, HashSet<string> foundFiles)
-    {
-        try
-        {
+    public static void SearchInFilesOfDirectory(string directory, string searchString){
+        HashSet<string> foundFiles = new HashSet<string>(); 
+        foreach (string file in Directory.GetFiles(directory, "*.cs")){
+                SearchInFile(file, searchString, foundFiles);
+            }
+    }
+
+    public static void RecursionForSubDirectories(string directory, string searchString){
+        foreach (string subDirectory in Directory.GetDirectories(directory)){
+            SearchInDirectory(subDirectory, searchString);
+        }
+    }
+
+    public static void SearchInFile(string filePath, string searchString, HashSet<string> foundFiles){
+        try{
             string[] lines = File.ReadAllLines(filePath);
-            for (int i = 0; i < lines.Length; i++)
-            {
-                if (lines[i].Contains(searchString, StringComparison.OrdinalIgnoreCase))
-                {
+            for (int i = 0; i < lines.Length; i++){
+                if (lines[i].Contains(searchString, StringComparison.OrdinalIgnoreCase)){
                     string fileName = Path.GetFileName(filePath);
-                    if (foundFiles.Add(fileName)) 
-                    {
-                        Console.WriteLine(fileName); 
-                    }
+                    VerifyIfFileAdded(foundFiles,fileName);
                     break; 
                 }
             }
         }
-        catch (Exception ex)
-        {
+        catch (Exception ex){
             Console.WriteLine($"Erro ao ler o arquivo {filePath}: {ex.Message}");
         }
+    }
+
+    public static void VerifyIfFileAdded(HashSet<string> foundFiles, string fileName){
+        string FileWihtOutExtension = RemoveExtension(fileName);
+        if (foundFiles.Add(FileWihtOutExtension)){
+            Console.WriteLine(FileWihtOutExtension); 
+        }
+    }
+    
+    public static string RemoveExtension(string fileName)
+    {
+        return Path.GetFileNameWithoutExtension(fileName);
     }
 }
