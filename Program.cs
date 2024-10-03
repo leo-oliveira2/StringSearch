@@ -9,11 +9,8 @@ public class Program
     {
         VerifyIfConsoleIsEmpty(args);
         string searchString = args[0];
-        string fixedPath = @"C:\KB\SescNet_Develop1\Data099\web\"; 
-        VerifyIfDirectoryExists(fixedPath);
-        Console.WriteLine($"Procurando por '{searchString}' em todos os arquivos .cs na pasta '{fixedPath}'...\n");
-        SearchInDirectory(fixedPath, searchString);
-    }
+
+        string fixedPath = @"Your\Path\";
 
     public static void VerifyIfDirectoryExists(String fixedPath){
         if (!Directory.Exists(fixedPath))
