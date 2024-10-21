@@ -99,8 +99,6 @@ C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\bin\Debug\net8
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\bin\Debug\net8.0\StringSearch.pdb
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSearchTests.csproj.AssemblyReference.cache
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSearchTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSearchTests.AssemblyInfoInputs.cache
-C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSearchTests.AssemblyInfo.cs
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSearchTests.csproj.CoreCompileInputs.cache
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSearchTests.sourcelink.json
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\StringSearchTests\obj\Debug\net8.0\StringSe.7DF7AC61.Up2Date

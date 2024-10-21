@@ -8,6 +8,10 @@
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
@@ -21,6 +25,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StringSearch.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Common\AssemblyInfo.cs" />
   </ItemGroup>
 
 </Project>

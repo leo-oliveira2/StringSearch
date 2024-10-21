@@ -1,7 +1,5 @@
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.csproj.AssemblyReference.cache
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.GeneratedMSBuildEditorConfig.editorconfig
-C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.AssemblyInfoInputs.cache
-C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.AssemblyInfo.cs
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.csproj.CoreCompileInputs.cache
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\obj\Debug\net8.0\StringSearch.sourcelink.json
 C:\KB\SescNet_Develop1\Data099\web\StringSearch\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
